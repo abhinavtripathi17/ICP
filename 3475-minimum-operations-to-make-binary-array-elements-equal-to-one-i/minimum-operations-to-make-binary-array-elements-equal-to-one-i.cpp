@@ -8,9 +8,9 @@ public:
         while(i < n-2){
             if(nums[i] == 0){
                 ops++;
-                nums[i] = abs(1 - nums[i]);
-                nums[i+1] = abs(1 - nums[i+1]);
-                nums[i+2] = abs(1 - nums[i+2]);
+                nums[i] = 1 ^ nums[i];
+                nums[i+1] = 1 ^ nums[i+1] ;
+                nums[i+2] = 1 ^ nums[i+2];
             }
             i++;
         }
